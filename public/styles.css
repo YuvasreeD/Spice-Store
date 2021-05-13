@@ -1,0 +1,42 @@
+.navbar
+{
+    padding: 2%;
+}
+#navbarText
+{
+    
+    margin-left: 60%;
+}
+#col
+{
+    border-color:rgb(163, 154, 154);
+    border-style: solid;
+    margin: 1%;
+    width: 100%;
+    padding:2%;
+}
+.row
+{
+    margin:2%;
+}
+.frm
+{
+    padding:3% 30%;
+}
+.btn-secondary
+{
+    margin-left: 42%;
+    text-align: center;
+    width: 15%;
+}
+.para
+{
+    background-color: rgb(224, 221, 221);
+    padding-left:2%;
+    
+
+}
+.img{
+    float:left;
+    margin-right: 10%;
+}

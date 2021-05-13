@@ -1,0 +1,41 @@
+<%- include("header") -%>
+<form action="/addSpice" method="POST">
+    <div class="frm">
+        <div class="form-group">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Vendor Name</label>
+                <input type="text" name="Vname" class="form-control" id="exampleFormControlInput1">
+              </div><br>
+
+            <label for="exampleFormControlSelect1">Select Spice</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="select">
+              <option value="Onion">0703       - Onion</option>
+              <option value="Garlic">0703 20    - Garlic</option>
+              <option value="Ginger">0910 11 10 - Ginger</option>
+              <option value="Green Chilli">0709 60 10 - Green Chilli</option>
+              <option value="Black pepper">0904 11 30 - Black Pepper</option>
+              <option value="Chilli powder">0904 22 11 - Chilli Powder</option>
+              <option value="Cinnamon bark">0906 11 10 - Cinnamon Bark</option>
+              <option value="Clove">0907 10 10 - Clove (Extracted)</option>
+              <option value="Cardamom">0908 32 20 - Cardamom</option>
+              <option value="Cumin seeds">0909 31    - Cumin Seeds</option>
+            </select>
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Price per kg</label>
+            <input type="number" name="price" class="form-control" id="exampleFormControlInput1">
+          </div><br>
+
+    
+        <button type="submit" class="btn btn-primary">Add</button><br>
+       
+
+    </div>
+
+  </form>
+  <a href="/">
+    <button type="submit" class="btn btn-secondary">Exit</button>
+  </a>
+
+<%- include("footer") -%>

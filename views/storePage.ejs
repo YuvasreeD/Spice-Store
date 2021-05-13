@@ -1,0 +1,298 @@
+<%- include("header") -%>
+<div class="container">
+<%    spiceItems.forEach(function(i){  %>
+        
+
+   
+    <div class="row">
+  <%      if(i.name === "Onion"){   %>
+
+            <div class="col-lg-12" id="col">
+                <strong><p>Onion<p></strong>
+                <div class="img">
+                 <img src="onion.jpeg" alt="onion" width="200" height="200">
+                </div>
+                <table class="para" width="40%">
+                    <tr>
+                      <th>Vendor Name</th>
+                      <th> Price per kg</th>
+                    </tr>
+                    
+                
+                <%               i.vendors.forEach(function(j){   %>
+                    <tr>
+                        <td> <%= j.vendorName   %></td>
+                        <td> Rs.<%= j.price   %></td>
+                      </tr>
+                    
+                    
+
+              <%   })  %>
+            </table>
+              </div>
+
+      <%  }  else if(i.name === "Garlic"){  %>
+
+            
+      <div class="col-lg-12"  id="col">
+        <strong><p>Garlic<p></strong>
+            <div class="img">
+             <img src="garlic.jpg" alt="garlic"  width="200" height="200">
+
+            </div>
+            <table class="para" width="40%">
+                <tr>
+                  <th>Vendor Name</th>
+                  <th> Price per kg</th>
+                </tr>
+                
+            
+            <%               i.vendors.forEach(function(j){   %>
+                <tr>
+                    <td> <%= j.vendorName   %></td>
+                    <td> Rs.<%= j.price   %></td>
+                  </tr>
+                
+                
+
+          <%   })  %>
+        </table>
+      </div>
+
+      <%         }else if(i.name === "Ginger"){  %>
+
+            <div class="col-lg-12"  id="col">
+                <strong><p>Ginger<p></strong>
+                    <div class="img">
+                     <img src="ginger.jpg" alt="ginger" width="200" height="200">
+
+                    </div>
+                    <table class="para" width="40%">
+                        <tr>
+                          <th>Vendor Name</th>
+                          <th> Price per kg</th>
+                        </tr>
+                        
+                    
+                    <%               i.vendors.forEach(function(j){   %>
+                        <tr>
+                            <td> <%= j.vendorName   %></td>
+                            <td> Rs.<%= j.price   %></td>
+                          </tr>
+                        
+                        
+    
+                  <%   })  %>
+                </table>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+   <%        } else if(i.name === "Green Chilli"){  %>
+        
+            <div class="col-lg-12" id="col">
+                <strong><p>Green Chilli<p></strong>
+                <div class="img">
+                 <img src="chilli.jpg" alt="chilli" width="200" height="200">
+
+                </div>
+                <table class="para" width="40%">
+                    <tr>
+                      <th>Vendor Name</th>
+                      <th> Price per kg</th>
+                    </tr>
+                    
+                
+                <%               i.vendors.forEach(function(j){   %>
+                    <tr>
+                        <td> <%= j.vendorName   %></td>
+                        <td> Rs.<%= j.price   %></td>
+                      </tr>
+                    
+                    
+
+              <%   })  %>
+            </table>
+              </div>
+
+      <%  } else if(i.name === "Black pepper"){  %>
+
+            <div class="col-lg-12"  id="col">
+                <strong><p>Black Pepper<p></strong>
+                    <div class="img">
+                     <img src="pepper.jpg" alt="pepper" width="200" height="200">
+
+                    </div>
+                    <table class="para" width="40%">
+                        <tr>
+                          <th>Vendor Name</th>
+                          <th> Price per kg</th>
+                        </tr>
+                        
+                    
+                    <%               i.vendors.forEach(function(j){   %>
+                        <tr>
+                            <td> <%= j.vendorName   %></td>
+                            <td> Rs.<%= j.price   %></td>
+                          </tr>
+                        
+                        
+    
+                  <%   })  %>
+                </table>
+              </div>
+
+    <%    }else if(i.name === "Chilli powder"){  %>
+            <div class="col-lg-12"  id="col">
+                <strong><p>Chilli Powder<p></strong>
+                    <div class="img">
+                     <img src="chilliPowder.jpeg" alt="chilli powder" width="200" height="200">
+  
+                    </div>
+                    <table class="para" width="40%">
+                        <tr>
+                          <th>Vendor Name</th>
+                          <th> Price per kg</th>
+                        </tr>
+                        
+                    
+                    <%               i.vendors.forEach(function(j){   %>
+                        <tr>
+                            <td> <%= j.vendorName   %></td>
+                            <td> Rs.<%= j.price   %></td>
+                          </tr>
+                        
+                        
+    
+                  <%   })  %>
+                </table>
+              </div>
+
+            </div>
+
+            <div class="row">
+           
+
+    <%    } else if(i.name === "Cinnamon bark"){ %>
+        
+           
+                <div class="col-lg-12" id="col">
+                  <strong><p>Cinnamon Bark<p></strong>
+                  <div class="img">
+                   <img src="cinnamon.jpg" alt="cinnamon" width="200" height="200">
+
+                  </div>
+                  <table class="para" width="40%">
+                    <tr>
+                      <th>Vendor Name</th>
+                      <th> Price per kg</th>
+                    </tr>
+                    
+                
+                <%               i.vendors.forEach(function(j){   %>
+                    <tr>
+                        <td> <%= j.vendorName   %></td>
+                        <td> Rs.<%= j.price   %></td>
+                      </tr>
+                    
+                    
+
+              <%   })  %>
+            </table>
+                </div>
+
+      <%  } else if(i.name === "Clove"){  %>
+            <div class="col-lg-12"  id="col">
+                <strong><p>Cloves<p></strong>
+                    <div class="img">
+                     <img src="clove.jpg" alt="clove" width="200" height="200">
+
+                    </div>
+                    <table class="para" width="40%">
+                        <tr>
+                          <th>Vendor Name</th>
+                          <th> Price per kg</th>
+                        </tr>
+                        
+                    
+                    <%               i.vendors.forEach(function(j){   %>
+                        <tr>
+                            <td> <%= j.vendorName   %></td>
+                            <td> Rs.<%= j.price   %></td>
+                          </tr>
+                        
+                        
+    
+                  <%   })  %>
+                </table>
+              </div>
+
+    <%    }  else if(i.name === "Cardamom"){  %>
+            
+        <div class="col-lg-12"  id="col">
+            <strong><p>Cardamom<p></strong>
+                <div class="img">
+                 <img src="cardamom.jpg" alt="cardamom" width="200" height="200">
+
+                </div>
+                <table class="para" width="40%">
+                    <tr>
+                      <th>Vendor Name</th>
+                      <th> Price per kg</th>
+                    </tr>
+                    
+                
+                <%               i.vendors.forEach(function(j){   %>
+                    <tr>
+                        <td> <%= j.vendorName   %></td>
+                        <td> Rs.<%= j.price   %></td>
+                      </tr>
+                    
+                    
+
+              <%   })  %>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+
+    <%    }  else if(i.name === "Cumin seeds"){  %>
+            <div class="col-lg-12" id="col">
+                <strong><p>Cumin Seeds<p></strong>
+                <div class="img">
+                 <img src="cumin.jpg" alt="cumin seeds" width="200" height="200">
+
+                </div>
+                <table class="para" width="40%">
+                    <tr>
+                      <th>Vendor Name</th>
+                      <th> Price per kg</th>
+                    </tr>
+                    
+                
+                <%               i.vendors.forEach(function(j){   %>
+                    <tr>
+                        <td> <%= j.vendorName   %></td>
+                        <td> Rs.<%= j.price   %></td>
+                      </tr>
+                    
+                    
+
+              <%   })  %>
+            </table>
+              </div>
+
+    <%    }   %>
+ 
+      </div>
+
+<%    })  %>
+
+  </div>
+
+<%- include("footer") -%>
+    
+
